@@ -43,3 +43,6 @@ http://ecs.catsdogs.kr.s3-website.ap-northeast-2.amazonaws.com/en/
 
 [Korean]
 http://ecs.catsdogs.kr.s3-website.ap-northeast-2.amazonaws.com/ko/
+
+## 라이센스
+이 라이브러리는 LICENSE 파일에 명시되어 있는 바와 같이 MIT-0 라이센스를 따릅니다. 

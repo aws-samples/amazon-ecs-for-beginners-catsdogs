@@ -1,0 +1,30 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout blog source
+        uses: actions/checkout@v1
+        with:
+          submodules: recursive
+          
+          
+      - name: Hugo setup
+        uses: peaceiris/actions-hugo@v2.4.11
+        with:
+          hugo-version: 0.66.0
+
+      - name: Hugo build
+        run: hugo -d public
+        
+      - name: Hugo deploy
+        run: hugo deploy --target=s3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

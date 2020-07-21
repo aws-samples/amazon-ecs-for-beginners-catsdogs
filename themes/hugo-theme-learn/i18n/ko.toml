@@ -1,0 +1,26 @@
+[Search-placeholder]
+other = "검색..."
+
+[Clear-History]
+other = "기록삭제"
+
+[Attachments-label]
+other = "첨부"
+
+[title-404]
+other = "에러"
+
+[message-404]
+other = "페이지를 찾을 수 없습니다."
+
+[Go-to-homepage]
+other = "홈으로"
+
+[Edit-this-page]
+other = "이 페이지를 편집"
+
+[Shortcuts-Title]
+other = "More"
+
+[Expand-title]
+other = "펼치기..."

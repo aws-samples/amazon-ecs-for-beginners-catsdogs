@@ -6,7 +6,7 @@ weight: 43
 ### Create service cats
 1)	Click **Create** in DEMOGO-ECS **Services** tab.
 2)	Step 1: Configure service 
-![CreateCats](../../../../static/images/ecs/service/cats_create.png)
+![CreateCats](/images/ecs/service/cats_create.png)
 - Launch type: **EC2**
 - Task Definition 
 Family: **catsdef**
@@ -22,16 +22,16 @@ Revision: 1 **(latest)**
   -  Load balancer name: Select **demogo-alb**
   
 1. Select **cats:0:80** and click **Add to load balancer.** 
-![AddCats](../../../../static/images/ecs/service/cats_add_to_lb.png)
+![AddCats](/images/ecs/service/cats_add_to_lb.png)
 
 1. **Container to load balance**
-  ![CatsContainer](../../../../static/images/ecs/service/cats_configure_container_to_lb.png)
+  ![CatsContainer](/images/ecs/service/cats_configure_container_to_lb.png)
 - Production listener port: **80:HTTP**
 - Target group name: Click **create new** and type `cats`
 - path pattern: /cats*, Evaluation order: `1`
 - Health check path: `/cats/`
 1. Service discovery: **Uncheck**  
-![ServiceDiscovery](../../../../static/images/ecs/service/service_discovery.png)
+![ServiceDiscovery](/images/ecs/service/service_discovery.png)
 1. Set Auto Scaling: Select **Do not adjust the service's desired count**
-![AutoScale](../../../../static/images/ecs/service/set_auto_scale.png)
+![AutoScale](/images/ecs/service/set_auto_scale.png)
 1. Review and create service **cats.**  

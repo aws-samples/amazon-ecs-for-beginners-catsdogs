@@ -9,7 +9,7 @@ pre: "<b>5. </b>"
 모니터링은 Amazon ECS와 사용자 AWS 솔루션의 안정성, 가용성 및 성능을 유지하는 중요한 역할을 합니다. 다중 지점 실패(multi-point failure)발생시 이를 보다 쉽게 디버깅할 수 있도록 AWS 솔루션의 모든 부분으로부터 모니터링 데이터를 수집해야 합니다.
 {{% /notice %}}
 
-![MonitoringOverview](../../static/images/monitoring/monitoring.svg)
+![MonitoringOverview](/images/monitoring/monitoring.svg)
 
 ## Amazon CloudWatch 컨테이너 인사이트
 CloudWatch Container Insights는 컨테이너 애플리케이션 및 마이크로서비스에 대한  **CPU, 메모리, 디스크, 네트워크 같은 리소스 사용률** 등의 지표와 로그를 수집 및 처리하여 요약합니다. 

@@ -3,9 +3,9 @@ title: "Create Capacity Provider"
 weight: 55
 ---
 1)	Go to [ECS](https://console.aws.amazon.com/ecs) Cluster and select **DEMOGO-ECS** and select **Capacity Providers** tab. Click **Create**.
-![CreateCapacityProvider](../../../../static/images/autoscale/cluster/create_capacity_provider&#32;(1).png)
+![CreateCapacityProvider](/images/autoscale/cluster/create_capacity_provider&#32;(1).png)
 2)	Create Capacity Provider
-![CreateACapacityProvider](../../../../static/images/autoscale/cluster/create_capacity_provider_2.png)
+![CreateACapacityProvider](/images/autoscale/cluster/create_capacity_provider_2.png)
 * Capacity provider name: `demogo-capacity-provider` 
 * Auto Scaling group: EC2ContainerService-[your cluster name]-EcsInstanceAsg
   * This ASG was auto-created when you create your cluster.
@@ -20,4 +20,4 @@ When managed scaling is enabled, the target capacity value is used as the target
 
 3)	Update cluster
 Default capacity provider strategy: Select ‘demogo-capacity-provider’ from the dropdown.
-![UpdateCluster](../../../../static/images/autoscale/cluster/update_cluster.png)
+![UpdateCluster](/images/autoscale/cluster/update_cluster.png)

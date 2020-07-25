@@ -3,9 +3,9 @@ title: "용량 공급자 생성"
 weight: 55
 ---
 1)	[Amazon ECS](https://console.aws.amazon.com/ecs) **DEMOGO-ECS** 클러스터로 이동하여 **Capacity Providers** 탭을 선택합니다. **Create**을 클릭합니다.
-![CreateCapacityProvider](../../../../static/images/autoscale/cluster/create_capacity_provider.png)
+![CreateCapacityProvider](/images/autoscale/cluster/create_capacity_provider.png)
 2)	용량 공급자 생성하기
-![CreateACapacityProvider](../../../../static/images/autoscale/cluster/create_capacity_provider_2.png)
+![CreateACapacityProvider](/images/autoscale/cluster/create_capacity_provider_2.png)
 * Capacity provider name: `demogo-capacity-provider`
 * Auto Scaling group: EC2ContainerService-[your cluster name]-EcsInstanceAsg
     * 이 ASG는 클러스터를 생성할 때 자동 생성된 것입니다.
@@ -20,4 +20,4 @@ weight: 55
 
 3)	클러스터 업데이트
 Default capacity provider strategy: 드롭다운에서 **demogo-capacity-provider**를 선택합니다.
-![UpdateCluster](../../../../static/images/autoscale/cluster/update_cluster.png)
+![UpdateCluster](/images/autoscale/cluster/update_cluster.png)

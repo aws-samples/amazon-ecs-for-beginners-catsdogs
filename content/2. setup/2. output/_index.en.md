@@ -7,4 +7,4 @@ weight: 12
 Now you have all the resources you need to continue to this lab. 
 {{% /notice %}}
 
-![Output](../../../static/images/setup/output.svg)
+![Output](/images/setup/output.svg)

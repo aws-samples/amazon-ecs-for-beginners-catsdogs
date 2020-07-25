@@ -15,7 +15,7 @@ Amazon ECS에서 Docker 컨테이너를 실행하려면 작업 정의(Task Defin
 - 작업의 컨테이너에 사용할 도커 네트워킹 모드
 - 작업에 사용할 로깅 구성 등
 
-![TaskDef](../../../static/images/ecs/ecs_taskdef.svg)
+![TaskDef](/images/ecs/ecs_taskdef.svg)
 
 ## 실습 순서
 1. **web** 작업 정의 생성

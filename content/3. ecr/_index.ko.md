@@ -9,10 +9,10 @@ Amazon Elastic Container Registry(ECR)를 Amazon ECS와 통합하여 Amazon ECS�
 {{% /notice %}}
 
 ## Amazon ECR 소개
-![ECR](../../static/images/ecr/ecr_1.svg)
+![ECR](/images/ecr/ecr_1.svg)
 
 ## 실습 단계
-![ECRLab](../../static/images/ecr/ecr_2.svg)
+![ECRLab](/images/ecr/ecr_2.svg)
 
 1. **cats, dogs** ECR 리포지토리 생성하기
 2. *Workstation*에 접속하여 **cats, dogs** 도커 이미지 빌드하고 태깅하기

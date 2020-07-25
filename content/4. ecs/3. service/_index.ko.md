@@ -13,7 +13,7 @@ Amazon ECS를 사용하여 Amazon ECS 클러스터에서 지정된 수의 작업
 
 이번 단계에서는 앞 챕터에서 생성한 작업 정의(Task Definitions)를 참조하는 3가지 서비스 **web, cats, dogs**를 생성합니다. 이 서비스들은 **ALB 경로 패턴별 타겟 그룹**과 연계되어 있습니다. 
 
-![ECSService](../../../static/images/ecs/service/ecs_service.svg)
+![ECSService](/images/ecs/service/ecs_service.svg)
 
 - **web** 타겟 그룹 - 경로 패턴 /
 - **cats** 타겟 그룹 - 경로 패턴 /cats

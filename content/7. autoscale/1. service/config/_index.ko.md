@@ -6,18 +6,18 @@ weight: 49
 
 1. [Amazon ECS](https://console.aws.amazon.com/ecs) **DEMOGO-ECS** 클러스터로 이동합니다. 
 2. **서비스** 탭에서 **web**을 선택하고 **Update**를 클릭합니다.
-![WebUpdate](../../../../static/images/autoscale/web_update.png)
+![WebUpdate](/images/autoscale/web_update.png)
 3. Step 1: Configure service - **다음 단계로 넘어갑니다.**
 4. Step 2: Configure network - **다음 단계로 넘어갑니다.**
 5. Step 3: Set Auto Scaling
 Service Auto Scaling: **Configure Service Auto Scaling to adjust your service's desired count**을 선택합니다.
 * Minimum number of tasks: `2`
 * Maximum number of tasks: `8` 
-![SetAutoScaling](../../../../static/images/autoscale/set_auto_scaling.png)
+![SetAutoScaling](/images/autoscale/set_auto_scaling.png)
 
 1. Automatic task scaling policies – **Add scaling policy**를 클릭합니다.
 2. **Add policy**를 설정합니다. 
-![TargetTracking](../../../../static/images/autoscale/target_tracking.png)
+![TargetTracking](/images/autoscale/target_tracking.png)
 * Scaling policy type: **Target tracking**
 * Policy name: `ALB-request-tracking`
 * ECS service metric: **ALBRequestCountPerTarget**

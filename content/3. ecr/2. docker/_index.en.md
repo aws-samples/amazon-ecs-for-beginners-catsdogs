@@ -20,13 +20,13 @@ $ cd cats
 $ cat Dockerfile
 ~~~ 
 Dockerfile under **cats** directory is executed when you build **cats** docker image. Use linux *cat* commands and review what is inside. 
-![CatImage](../../../static/images/ecr/build_cats_1.png)
+![CatImage](/images/ecr/build_cats_1.png)
 
 3. Build **cats**. 
 ~~~
 $ docker build -t cats . 
 ~~~
-![CatImageBuild](../../../static/images/ecr/build_cats_2.png)
+![CatImageBuild](/images/ecr/build_cats_2.png)
 
 {{% notice tips %}}
 Find what **FROM**, **RUN** and others mean [here.](https://docs.docker.com/engine/reference/builder/#dockerfile-reference) For instance, he **FROM** instruction initializes a new build stage and sets the Base Image for subsequent instructions.

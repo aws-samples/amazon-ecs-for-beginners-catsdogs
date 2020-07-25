@@ -20,7 +20,7 @@ $ cd cats
 $ cat Dockerfile
 ~~~ 
 cats 디렉토리의 Dockerfile은 **cats** 도커 이미지를 빌드하기 위해 필요합니다. 어떤 내용을 담고 있는지 리눅스 *cat* 명령어를 이용하여 확인합니다.
-![CatImage](../../../static/images/ecr/build_cats_1.png)
+![CatImage](/images/ecr/build_cats_1.png)
 
 {{% notice tips %}}
 [Dockerfile](https://docs.docker.com/engine/reference/builder/#dockerfile-reference)의 **FROM**, **RUN** 등이 무엇을 의미하는지 더 알아봅니다. 예를 들어 **FROM** 명령어는 새 빌드 단계를 초기화하고 후속 명령어에 대한 기본 이미지를 설정합니다.
@@ -30,7 +30,7 @@ cats 디렉토리의 Dockerfile은 **cats** 도커 이미지를 빌드하기 위
 ~~~
 $ docker build -t cats . 
 ~~~
-![CatImageBuild](../../../static/images/ecr/build_cats_2.png)
+![CatImageBuild](/images/ecr/build_cats_2.png)
 
 4. **dogs**에서도 동일한 작업을 수행하기 위해 디렉토리를 이동합니다.
 ~~~

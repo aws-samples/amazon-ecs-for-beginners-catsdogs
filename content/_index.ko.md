@@ -10,7 +10,7 @@ weight: 1
 ---
 
 ## 사랑과 행복을 찾아서
-![catsdogs](../static/images/intro/catsdogs.svg)
+![catsdogs](/images/intro/catsdogs.svg)
 이 워크샵은 Amazon ECS, Fargate 또는 도커 컨테이너의 워크플로우에 친숙하지 않은 분들도 쉽게 따라할 수 있습니다.  
 
 ## Amazon ECS

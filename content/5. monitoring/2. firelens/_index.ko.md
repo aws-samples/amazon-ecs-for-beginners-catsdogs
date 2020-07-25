@@ -14,8 +14,8 @@ Amazon ECS용 FireLens를 사용하면 작업 정의 파라미터를 사용하�
 
 1)	[CloudWatch Log groups](https://ap-northeast-2.console.aws.amazon.com/cloudwatch/home?region=ap-northeast-2#logs:)로 이동합니다.
 2)	**ecs-demogo-log**를 검색합니다. 
-![FilterLogGroups](../../../static/images/monitoring/firelens_1.png)
+![FilterLogGroups](/images/monitoring/firelens_1.png)
 3)	**ecs-demogo-log**를 클릭하고 각 로그 스트림을 살펴봅니다. 
-![LogStream](../../../static/images/monitoring/firelens_2.png)
+![LogStream](/images/monitoring/firelens_2.png)
 4)	각 로그를 펼쳐서 더 상세한 정보를 찾을 수 있습니다. container_id, ecs_cluster, etcs_task_definition 등의 정보를 담고 있습니다.  
-![DetailLogs](../../../static/images/monitoring/firelens_3.png)
+![DetailLogs](/images/monitoring/firelens_3.png)

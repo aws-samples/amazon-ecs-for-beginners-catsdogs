@@ -7,7 +7,7 @@ pre: "<b>1. </b>"
 
 ## Architecture
 
-![Architecture](../../static/images/intro/architecture.svg)
+![Architecture](/images/intro/architecture.svg)
 
 ## We will:
 * Manage Docker images of **cats** and **dogs** in Amazon ECR.

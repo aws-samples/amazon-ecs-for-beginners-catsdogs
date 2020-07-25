@@ -9,13 +9,13 @@ Create Application Load Balancer to forward and distribute traffic to **cats and
 ## Create DEMOGO-ALB
 1. Move to [EC2 Load Balancers.](https://ap-northeast-2.console.aws.amazon.com/ec2/v2/home?region=ap-northeast-2#LoadBalancers:sort=loadBalancerName)
 2. Click **Create Load Balancer** and select **Application Load Balancer.** 
-![ALB](../../../../static/images/ecs/service/select_alb.png)
+![ALB](/images/ecs/service/select_alb.png)
 1. Step 1: Configure Load Balancer 
 - Name: `demogo-alb` 
-![ConfigALB](../../../../static/images/ecs/service/demogo-elb.png)
+![ConfigALB](/images/ecs/service/demogo-elb.png)
 
 4. Availability zones
-![AZs](../../../../static/images/ecs/service/alb-vpc-az.png)
+![AZs](/images/ecs/service/alb-vpc-az.png)
 - VPC: DemoGoECSVPC (10.0.0.0/16)
 - Select both **ap-northeast-2a** and **ap-northeast-2b.**
 - Subnet: Select **PublicSubnet1, 2**
@@ -24,9 +24,9 @@ Create Application Load Balancer to forward and distribute traffic to **cats and
 
 2. Step 3: Configure Security Groups
 Select **existing security group** and uncheck **default.** Choose **ecs-demogo-ALBSG.** 
-![ALBSG](../../../../static/images/ecs/service/alb-security-group.png)
+![ALBSG](/images/ecs/service/alb-security-group.png)
 1. Step 4: Configure Routing 
-![Routing](../../../../static/images/ecs/service/alb_configure_routing.png)
+![Routing](/images/ecs/service/alb_configure_routing.png)
 - Target group: New target group
 - Name: `web`
 - Target type: Instance (Because **web** task definition is EC2 type.)

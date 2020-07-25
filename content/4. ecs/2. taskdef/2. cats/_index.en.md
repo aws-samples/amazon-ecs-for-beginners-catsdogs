@@ -11,22 +11,22 @@ You just created **web** task definition and the way to define **cats** task is 
 ## Create catsdef
 1)	Move to [Amazon ECS](https://console.aws.amazon.com/ecs) Task definition to create new.  
 2)	Select launch type compatibility: **EC2**  
-![SelectEC2](../../../../static/images/ecs/taskdef/taskdef_select_ec2.png)
+![SelectEC2](/images/ecs/taskdef/taskdef_select_ec2.png)
 3)	Task Definition Name: `catsdef`  
 
 ### Configure FireLens
 #### Enable FireLens
 4)	Scroll down to *Log Router Integration* and check *Enable Firelens Intigration.* Select **fluentbit** and click **Apply.**  
-![EnableFireLens](../../../../static/images/ecs/taskdef/enable_firelens.png)
+![EnableFireLens](/images/ecs/taskdef/enable_firelens.png)
 
 Scroll up to *Container Definitions* and check if **log_router** container was created. 
-![CheckLogRouter](../../../../static/images/ecs/taskdef/taskdef_added_log_router.png)
+![CheckLogRouter](/images/ecs/taskdef/taskdef_added_log_router.png)
 
 #### Log Configuration of log_router container
 Click **log_router** container and scroll down to *Advanced container configuration – STORAGE AND LOGGING* to configure log. 
 1. Log configuration: Uncheck **Auto-configure CloudWatch Logs**
 2. Log driver and options:
-![LogConfig](../../../../static/images/ecs/taskdef/taskdef_log_router_logging.png)
+![LogConfig](/images/ecs/taskdef/taskdef_log_router_logging.png)
 - Log driver: **awslogs**
 - Log options: Copy and paste is recommended.
   
@@ -41,7 +41,7 @@ Click **log_router** container and scroll down to *Advanced container configurat
 
 ### Add cats container
 Come back to *Container Definitions* and click **Add container** to add **cats**.
-![CatsTask](../../../../static/images/ecs/taskdef/taskdef_cats_uri.png)
+![CatsTask](/images/ecs/taskdef/taskdef_cats_uri.png)
 1. Configure **cats** container. 
 - Container name: `cats`
 - Image: your **cats** latest image URI 
@@ -49,7 +49,7 @@ Come back to *Container Definitions* and click **Add container** to add **cats**
 {{% notice tip %}}
 Open new browser tab and move to ECR. Select **cats** repository and click the button of **latest** tagged image. 
 {{% /notice %}}
-![CatsLatest](../../../../static/images/ecs/taskdef/taskdef_cats_latest_image.png)
+![CatsLatest](/images/ecs/taskdef/taskdef_cats_latest_image.png)
 - Memory Limits - Hard limit 128
 - Port mappings
     + Host port: 0
@@ -59,7 +59,7 @@ Open new browser tab and move to ECR. Select **cats** repository and click the b
 Scroll down to *Advanced container configuration – STORAGE AND LOGGING* and configure **cats** container logging.
 1. Log configuration: Uncheck **Auto-configure Cloudwatch Logs.**
 2. Log driver and options: 
-![CatsLogConfig](../../../../static/images/ecs/taskdef/taskdef_cats_log_config.png)
+![CatsLogConfig](/images/ecs/taskdef/taskdef_cats_log_config.png)
 - Log driver: awsfirelens
 - Log options
 

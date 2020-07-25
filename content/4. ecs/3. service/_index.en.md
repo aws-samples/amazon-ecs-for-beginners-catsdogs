@@ -13,7 +13,7 @@ In addition to maintaining the desired count of tasks in your service, you can o
 
 In this lab, you will create 3 services referring task definitions that you created earlier. These services are associated with the **target groups** by **ALB path patterns.**
 
-![ECSService](../../../static/images/ecs/service/ecs_service.svg)
+![ECSService](/images/ecs/service/ecs_service.svg)
 
 - **web** target group - path pattern /
 - **cats** target group - path pattern /cats

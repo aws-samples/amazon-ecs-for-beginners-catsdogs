@@ -10,7 +10,7 @@ weight: 1
 ---
 
 ## Searching for Love and Happiness
-![catsdogs](../static/images/intro/catsdogs.svg)
+![catsdogs](/images/intro/catsdogs.svg)
 This workshop is designed to educate engineers that might not be familiar with Amazon ECS, Fargate, and possibly even Docker container workflow.
 
 ## Amazon ECS

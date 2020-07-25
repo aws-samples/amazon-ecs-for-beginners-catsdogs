@@ -11,13 +11,13 @@ weight: 34
 ### Web 작업 정의 생성
 1. [Amazon ECS](https://console.aws.amazon.com/ecs) Task definition로 이동하여 **Create new Task Definition**을 클릭합니다. 
 2. Select launch type compatibility: **EC2**를 선택합니다.
-![SelectEC2](../../../../static/images/ecs/taskdef/taskdef_select_ec2.png)
+![SelectEC2](/images/ecs/taskdef/taskdef_select_ec2.png)
 1. Task Definition Name: `web`를 입력합니다. 
-![WebTask](../../../../static/images/ecs/taskdef/taskdef_web_1.png)
+![WebTask](/images/ecs/taskdef/taskdef_web_1.png)
 1. *Container Definitions*까지 스크롤을 내린 후 **Add container**를 클릭합니다.
-![AddWebContainer](../../../../static/images/ecs/taskdef/taskdef_add_container.png)
+![AddWebContainer](/images/ecs/taskdef/taskdef_add_container.png)
 1. Web 컨테이너를 설정합니다.
-![ConfigWebContainer](../../../../static/images/ecs/taskdef/taskdef_add_container_2.png)
+![ConfigWebContainer](/images/ecs/taskdef/taskdef_add_container_2.png)
 
 
 - Container name: `web`

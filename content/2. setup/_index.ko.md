@@ -24,9 +24,9 @@ AWS 계정을 생성했지만 직접 IAM 사용자를 생성하지 않은 경우
 1.	**User name** (사용자 이름)은 `Administrator`로 입력합니다.
 1.	**AWS Management Console access** 체크박스를 선택하고, **Custom password**를 선택한 다음 비빌번호를 입력합니다. 
 1.	**Next: Permissions** (다음: 권한)을 클릭합니다.
-![IAMPermission](../../static/images/iam_user_01.png)
+![IAMPermission](/images/iam_user_01.png)
 1.	**Attach existing policies directly** (기존 정책 직접 연결)를 선택하고 **AdministratorAccess** 정책에 체크박스를 선택하고 **Next: Tags** (다음: 태그)를 클릭합니다.
-![IAMPolicy](../../static/images/iam_user_02.png)
+![IAMPolicy](/images/iam_user_02.png)
 1.	**Next: Review** (다음: 검토)를 클릭합니다.
 1.	Administrator 사용자에 AdministratorAccess 관리형 정책이 추가 된 것을 확인하고 **Create user** (사용자 만들기)를 클릭합니다.
 1.	이제 **Root** 사용자를 **로그아웃**하고 새로 생성한 **Administrator** 사용자로 **로그인**을 합니다. 다음 URL을 사용하여 로그인 할 수 있습니다.

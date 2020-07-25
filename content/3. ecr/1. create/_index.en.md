@@ -9,8 +9,8 @@ You will create two ECR repositories for cats and dogs docker image management. 
 
 
 1. Move to [Amazon ECR.](https://console.aws.amazon.com/ecr) If it is your first time to use ECR, you will see welcome page. Click **Get Started** or **Repositories** on the left navigation bar.
-![MoveToECR](../../../static/images/ecr/ecr_3.png)
+![MoveToECR](/images/ecr/ecr_3.png)
 1. Create repository: name **cats**, **dogs** 
-![CreateECR](../../../static/images/ecr/ecr_4.png)
+![CreateECR](/images/ecr/ecr_4.png)
 1. Check if the two repositories created successfully. 
-![CheckECR](../../../static/images/ecr/ecr_5.png)
+![CheckECR](/images/ecr/ecr_5.png)

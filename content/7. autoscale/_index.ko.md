@@ -9,11 +9,11 @@ pre: "<b>6. </b>"
 {{% /notice %}}
 
 ## Amazon ECS 서비스 오토스케일링
-![ServiceAutoScale](../../static/images/autoscale/service_auto_scale.svg)
+![ServiceAutoScale](/images/autoscale/service_auto_scale.svg)
 Amazon ECS는 수요에 맞게 서비스를 스케일 아웃(**태스크 수를 추가**)하거나 사용량이 적은 때에는 스케일 인(**태스크 수를 감소**)하여 자동으로 조정할 수 있습니다. 
 
 ## Amazon ECS 클러스터 오토스케일링
-![ClusterAutoScale](../../static/images/autoscale/cluster_auto_scale.svg)
+![ClusterAutoScale](/images/autoscale/cluster_auto_scale.svg)
 ECS Cluster Auto Scaling을 사용하면 EC2에서 실행되는 ECS 클러스터가 클러스터의 모든 태스크 및 서비스의 리소스 수요에 맞게 필요에 따라 자동으로 확장할 수 있습니다. 
 
 ECS Cluster Auto Scaling은 ECS에서 ECS **용량 공급자**를 사용하여 사용자를 대신해 Amazon EC2 Auto Scaling 그룹(ASG)을 관리합니다. 사용자는 **ASG**의 관리형 확장을 활성화하고, ASG에서 초과 용량을 예약하고, ASG에서 인스턴스 종료를 관리하도록 용량 공급자를 구성할 수 있습니다. 

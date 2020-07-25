@@ -9,10 +9,10 @@ Amazon Elastic Container Registry (ECR) is integrated with Amazon ECS allowing y
 {{% /notice %}}
 
 ## What is Amazon ECR
-![ECR](../../static/images/ecr/ecr_1.svg)
+![ECR](/images/ecr/ecr_1.svg)
 
 ## What you will do
-![ECRLab](../../static/images/ecr/ecr_2.svg)
+![ECRLab](/images/ecr/ecr_2.svg)
 
 1. Create Amazon ECR **cats, dogs** repositories. 
 2. SSH to *Workstation* instance to build and tag **cats, dogs** docker images. 

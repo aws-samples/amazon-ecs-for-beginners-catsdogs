@@ -9,7 +9,7 @@ $ ssh -i [key pair name.pem] ec2-user@[Workstation Public IP]
 ~~~
 
 2.  예시로 넣어둔 **cluster_loadtest.sh**의 내용을 살펴봅니다.
-![ClusterScript](../../../../static/images/autoscale/cluster/cluster_load_test_1.png)
+![ClusterScript](/images/autoscale/cluster/cluster_load_test_1.png)
 ~~~
 $ cat cluster_loadtest.sh
 ~~~
@@ -35,4 +35,4 @@ $ chmod 755 cluster_loadtest_[실습자 이름].sh
 ~~~ 
 $ ./cluster_loadtest_[실습자이름].sh 
 ~~~
-![ClusterLoadTest](../../../../static/images/autoscale/cluster/cluster_load_test_2.png)
+![ClusterLoadTest](/images/autoscale/cluster/cluster_load_test_2.png)

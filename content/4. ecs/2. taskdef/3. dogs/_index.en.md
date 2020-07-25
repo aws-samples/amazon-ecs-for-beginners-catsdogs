@@ -11,21 +11,21 @@ Because **dogs** has **Fargate** launch type, not like **web** and **cats**, few
 ### Create dogsdef
 1. Move to [Amazon ECS](https://console.aws.amazon.com/ecs) Task definition and create new.
 2. Select launch type compatibility: **Fargate**
-![SelectFargate](../../../../static/images/ecs/taskdef/taskdef_select_fargate.png)
+![SelectFargate](/images/ecs/taskdef/taskdef_select_fargate.png)
 3. Task Definition Name: `dogsdef`
-![DogTask](../../../../static/images/ecs/taskdef/taskdef_dogs_1.png)
+![DogTask](/images/ecs/taskdef/taskdef_dogs_1.png)
 4. Task size
-![TaskSize](../../../../static/images/ecs/taskdef/task_size_fargate.png)
+![TaskSize](/images/ecs/taskdef/task_size_fargate.png)
 - Task memory (GB): 0.5GB
 - Task CPU (vCPU): 0.25 vCPU
 5. Go to *Container Definitions* and click **Add container.** 
-![AddContainer](../../../../static/images/ecs/taskdef/taskdef_add_container.png)
+![AddContainer](/images/ecs/taskdef/taskdef_add_container.png)
 6. Configure **dogs** container.
-![AddDogsContainer](../../../../static/images/ecs/taskdef/taskdef_add_dogs.png)
+![AddDogsContainer](/images/ecs/taskdef/taskdef_add_dogs.png)
 - Container name: `dogs`
 - Image: your **dogs** latest image URI 
     * Copy from the browser tab opening Amazon ECR. 
-![DogsLatest](../../../../static/images/ecr/ecr_dogs_latest.png)
+![DogsLatest](/images/ecr/ecr_dogs_latest.png)
 - Memory Limits: Soft limit 128
 - Port mappings: Container port 80
 7. Click **Add** then the window closes. Check if **dogs** container is added. 

@@ -23,9 +23,9 @@ Now you have your own AWS account and let's create an IAM user with Administrato
 1.	**User name**: `Administrator`
 1.	Check **AWS Management Console access**. Select **Custom password** and enter the password to use.  
 1.	Click **Next: Permissions**.
-![IAMPermission](../../static/images/iam_user_01.png)
+![IAMPermission](/images/iam_user_01.png)
 1.	Select **Attach existing policies directly** and check **AdministratorAccess** policy. Click **Next: Tags**.
-![IAMPolicy](../../static/images/iam_user_02.png)
+![IAMPolicy](/images/iam_user_02.png)
 1.	Click **Next: Review**.
 1.	Review if **Administrator** user has **AdministratorAccess** managed policy and click **Create user**. 
 1.	Logout and log back in using **Administrator** userid. 

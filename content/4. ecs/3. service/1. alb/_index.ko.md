@@ -9,13 +9,13 @@ weight: 41
 ## DEMOGO-ALB 생성
 1. [EC2 Load Balancers](https://ap-northeast-2.console.aws.amazon.com/ec2/v2/home?region=ap-northeast-2#LoadBalancers:sort=loadBalancerName)로 이동합니다. 
 2. **Create Load Balancer**를 클릭하고 **Application Load Balancer**를 선택합니다. 
-![ALB](../../../../static/images/ecs/service/select_alb.png)
+![ALB](/images/ecs/service/select_alb.png)
 3. Step 1: Configure Load Balancer 
 - Name: `demogo-alb`
-![ConfigALB](../../../../static/images/ecs/service/demogo-elb.png)
+![ConfigALB](/images/ecs/service/demogo-elb.png)
 
 4. 가용 영역
-![AZs](../../../../static/images/ecs/service/alb-vpc-az.png)
+![AZs](/images/ecs/service/alb-vpc-az.png)
 - VPC: DemoGoECSVPC (10.0.0.0/16)
 - 가용영역 **ap-northeast-2a**와 **ap-northeast-2b**를 모두 체크합니다. 
 - Subnet: **PublicSubnet1, 2**를 선택합니다. 
@@ -24,9 +24,9 @@ weight: 41
 
 6. Step 3: Configure Security Groups
 **existing security group**이 선택되었는지 확인하고 **default** 보안그룹은 선택 해제하고 **ecs-demogo-ALBSG**를 선택합니다. 
-![ALBSG](../../../../static/images/ecs/service/alb-security-group.png)
+![ALBSG](/images/ecs/service/alb-security-group.png)
 7. Step 4: Configure Routing 
-![Routing](../../../../static/images/ecs/service/alb_configure_routing.png)
+![Routing](/images/ecs/service/alb_configure_routing.png)
 - Target group: New target group
 - Name: `web`
 - Target type: Instance (앞 단계에서 생성한 **web** 작업 정의가 **EC2** 타입이기 때문입니다.)

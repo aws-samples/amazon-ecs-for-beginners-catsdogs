@@ -13,10 +13,10 @@ FireLens works with Fluentd and Fluent Bit. AWS provide the AWS for Fluent Bit i
 
 1)	Move to [CloudWatch Log groups.](https://ap-northeast-2.console.aws.amazon.com/cloudwatch/home?region=ap-northeast-2#logs:)
 2)	Filter **ecs-demogo-log**
-![FilterLogGroups](../../../static/images/monitoring/firelens_1.svg)
+![FilterLogGroups](/images/monitoring/firelens_1.svg)
 3)	Click **ecs-demogo-log** and navigate each log stream.
-![LogStream](../../../static/images/monitoring/firelens_2.png)
+![LogStream](/images/monitoring/firelens_2.png)
 4)	Expand each log to find more information. 
-![DetailLogs](../../../static/images/monitoring/firelens_3.svg)
+![DetailLogs](/images/monitoring/firelens_3.svg)
 You can find information about container_id, ecs_cluster, etcs_task_definition and logs etc. 
 

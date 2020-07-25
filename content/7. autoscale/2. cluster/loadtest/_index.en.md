@@ -9,7 +9,7 @@ $ ssh -i [key pair name.pem] ec2-user@[Workstation Public IP]
 ~~~
 
 2.  Check **cluster_loadtest.sh** example. 
-![ClusterScript](../../../../static/images/autoscale/cluster/cluster_load_test_1.png)
+![ClusterScript](/images/autoscale/cluster/cluster_load_test_1.png)
 ~~~
 $ cat cluster_loadtest.sh
 ~~~
@@ -38,4 +38,4 @@ $ chmod 755 cluster_loadtest_[Your Name].sh
 ~~~ 
 $ ./cluster_loadtest_[Your Name].sh 
 ~~~
-![ClusterLoadTest](../../../../static/images/autoscale/cluster/cluster_load_test_2.png)
+![ClusterLoadTest](/images/autoscale/cluster/cluster_load_test_2.png)

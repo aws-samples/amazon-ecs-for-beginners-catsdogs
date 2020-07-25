@@ -7,7 +7,7 @@ pre: "<b>1. </b>"
 
 ## 전체 아키텍처
 
-![Architecture](../../static/images/intro/architecture.svg)
+![Architecture](/images/intro/architecture.svg)
 
 ## 실습 범위
 * Amazon ECR에서 **도커 이미지** **관리**

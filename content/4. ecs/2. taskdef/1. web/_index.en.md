@@ -11,13 +11,13 @@ weight: 34
 ### Create web task definition
 1. Move to [Amazon ECS](https://console.aws.amazon.com/ecs) Task definition. Click  **Create new Task Definition**
 2. Select launch type compatibility: **EC2** 
-![SelectEC2](../../../../static/images/ecs/taskdef/taskdef_select_ec2.png)
+![SelectEC2](/images/ecs/taskdef/taskdef_select_ec2.png)
 1. Task Definition Name: `web`
-![WebTask](../../../../static/images/ecs/taskdef/taskdef_web_1.png)
+![WebTask](/images/ecs/taskdef/taskdef_web_1.png)
 1. Scroll down to *Container Definitions* and click **Add container**.
-![AddWebContainer](../../../../static/images/ecs/taskdef/taskdef_add_container.png)
+![AddWebContainer](/images/ecs/taskdef/taskdef_add_container.png)
 1. Config **web** container.  
-![ConfigWebContainer](../../../../static/images/ecs/taskdef/taskdef_add_container_2.png)
+![ConfigWebContainer](/images/ecs/taskdef/taskdef_add_container_2.png)
 - Container name: `web`
 - Image: `038445823716.dkr.ecr.ap-northeast-2.amazonaws.com/web:latest`
 - Memory Limits - Hard limit 128

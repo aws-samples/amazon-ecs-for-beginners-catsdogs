@@ -19,16 +19,16 @@ CloudFormation 스택을 시작하려면, [Launch Stack 버튼](https://console.
 
 {{% button href="https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/new?stackName=ecs-demogo&templateURL=https://ecs-demogo-cf-template.s3.ap-northeast-2.amazonaws.com/demogostack.yaml" icon="fab fa-aws" icon-position="left" %}}&nbsp;Launch Stack{{% /button %}}
 
-![CloudFormation_01](../../../static/images/setup/cloud_formation1.png)
+![CloudFormation_01](/images/setup/cloud_formation1.png)
 
 스택 생성 단계에서 스택 이름을 입력하고 실습에서 사용할 EC2 키 페어를 선택합니다. 그리고 나머지는 기본 값을 유지하고 마지막 단계에서 CloudFormation이 IAM 리소스를 생성할 때 커스텀 이름을 사용할 수 있게 **Acknowledge 체크박스를 선택**하고 **Create stack** (스택 생성)을 클릭합니다.
 
-![CloudFormation_02](../../../static/images/setup/cloud_formation2.png)
+![CloudFormation_02](/images/setup/cloud_formation2.png)
 CloudFormation 스택을 완료하는 데 약 5분 정도 소요됩니다. 
-![CloudFormation_03](../../../static/images/setup/cloud_formation3.png)
+![CloudFormation_03](/images/setup/cloud_formation3.png)
 
 CloudFormation 콘솔을 확인하고 아래와 같이 **CREATE_COMPLETE** 상태를 기다립니다.
-![CloudFormation_04](../../../static/images/setup/cloud_formation4.png)
+![CloudFormation_04](/images/setup/cloud_formation4.png)
 
 
 

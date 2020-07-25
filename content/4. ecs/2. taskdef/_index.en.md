@@ -15,7 +15,7 @@ Some of the [parameters](https://docs.aws.amazon.com/ko_kr/AmazonECS/latest/deve
 * The Docker networking mode to use for the containers in your task
 * The logging configuration to use for your tasks…and more. 
 
-![TaskDef](../../../static/images/ecs/ecs_taskdef.svg)
+![TaskDef](/images/ecs/ecs_taskdef.svg)
 
 ## What you will do
 1. Create **web** task definition 

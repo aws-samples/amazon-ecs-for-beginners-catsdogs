@@ -10,10 +10,10 @@ CloudWatch Container Insights를 사용해 컨테이너식 애플리케이션 �
 ### Container Insights로 ECS 모니터링하기
 1.	[Amazon CloudWatch](https://console.aws.amazon.com/cloudwatch)로 이동합니다.
 2.	드롭다운에서 **Container Insights**를 선택합니다. CloudWatch가 ECS의 다양한 모니터링 지표들을 한 눈에 볼 수 있도록 자동 생성한 대시보드를 살펴봅니다. 
-![InsightDashboard](../../../static/images/monitoring/container_insight_1.png)
+![InsightDashboard](/images/monitoring/container_insight_1.png)
 3.	ECS Clusters, ECS Services, ECS Tasks들을 하나씩 살펴봅니다.  [지표별 상세 내용](https://docs.aws.amazon.com/ko_kr/AmazonCloudWatch/latest/monitoring/Container-Insights-metrics-ECS.html)을 더 알아봅니다. 
-![ECSCluster](../../../static/images/monitoring/container_insight_2.png)
+![ECSCluster](/images/monitoring/container_insight_2.png)
 4. Container Insights는 ECS **클러스터** 뿐만 아니라 **태스크**의 지표들도 수집합니다. 어떤 태스크가 클러스터의 CPU, 메모리, 네트워크, 스토리지 등의 리소스를 얼마나 소모하는지 감시할 수 있습니다. 모니터링하고자 하는 태스크를 검색합니다. 
-![ECSTasks](../../../static/images/monitoring/container_insight_3.png)
+![ECSTasks](/images/monitoring/container_insight_3.png)
 5. 두 개 이상의 컨테이너를 가진 태스크인 경우 **컨테이너별** Container Performance 지표들도 확인할 수 있습니다.
-![ECSContainers](../../../static/images/monitoring/container_insights_4.png)
+![ECSContainers](/images/monitoring/container_insights_4.png)

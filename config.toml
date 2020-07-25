@@ -24,10 +24,20 @@ home = [ "HTML", "RSS", "JSON"]
   url = "https://ecsworkshop.com/"
   weight = 1000
 
+[[menu.shortcuts]] 
+  name = "<i class='fab fa-aws'></i> EKS Workshop"
+  url = "https://eksworkshop.com/"
+  weight = 1010
+
+[[menu.shortcuts]] 
+  name = "<i class='fab fa-aws'></i> AppMesh Workshop"
+  url = "https://www.appmeshworkshop.com/"
+  weight = 1020
+
 [[menu.shortcuts]]
   name = "<i class='fas fa-blog'></i> AWS Blog"
   url = "https://aws.amazon.com/blogs/aws/"
-  weight = 1020
+  weight = 1030
 
 
 #[[menu.shortcuts]]

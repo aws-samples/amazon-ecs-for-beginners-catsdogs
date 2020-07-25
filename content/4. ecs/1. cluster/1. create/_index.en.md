@@ -8,11 +8,11 @@ You will create EC2 Linux cluster **DEMOGO-ECS** and an IAM role **ecsInstanceRo
 {{% /notice %}}
 
 1. Move to [Amazon ECS](https://console.aws.amazon.com/ecs). If it is your first time to run ECS, you will see **Get started** screen. Please ignore and directly head to Amazon ECS Clusters and click **Create Cluster.**
-![CreateCluster](../../../../static/images/ecs/cluster/ecs_cluster_1.png)
+![CreateCluster](/images/ecs/cluster/ecs_cluster_1.png)
 2)	Step 1: Select cluster template – Select **EC2 Linux + Networking**.
-![SelectClusterTemplate](../../../../static/images/ecs/cluster/select_linux.png)
+![SelectClusterTemplate](/images/ecs/cluster/select_linux.png)
 3)	Step 2: Configure cluster	
-![ConfigureCluster](../../../../static/images/ecs/cluster/create_demogo_ecs.png)
+![ConfigureCluster](/images/ecs/cluster/create_demogo_ecs.png)
 - Cluster name: `DEMOGO-ECS`
 - Instance Configuration    
     + Provisioning model: On-Demand Instance
@@ -22,17 +22,17 @@ You will create EC2 Linux cluster **DEMOGO-ECS** and an IAM role **ecsInstanceRo
     + EBS storage: 22
     + Key pair: Choose your key pair. 
 4. Networking
-![ConfigureNetwork](../../../../static/images/ecs/cluster/cluster_network.png)
+![ConfigureNetwork](/images/ecs/cluster/cluster_network.png)
 + VPC: **DemoGoECSVPC (10.0.0.0/16)**
 + Subnets: **Private subnet 1,2 (10.0.3.0/24, 10.0.4.0/24)**
 + Security Group: **ecs-demogo-ECSInstanceSG**
 
 5. Container instance IAM role: Select **Create new role**. It automatically creates a role named **ecsInstanceRole.**  
-![IAMrole](../../../../static/images/ecs/cluster/cluster_iam_role.png)
+![IAMrole](/images/ecs/cluster/cluster_iam_role.png)
 
 {{% notice info %}}
 If you created **ecsInstanceRole** before, select it. You will add more permission in the next step. However, if you should not change ecsInstanceRole for any reason, please create another IAM role for this workshop.
 {{% /notice %}}
 
 6. CloudWatch Container Insight: check **Enable Container Insights** and click **Create.**
-![ContainerInsight](../../../../static/images/ecs/cluster/enable_container_insights.png)
+![ContainerInsight](/images/ecs/cluster/enable_container_insights.png)

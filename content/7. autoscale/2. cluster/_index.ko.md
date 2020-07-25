@@ -19,3 +19,5 @@ EC2와 Fargate 모두에서 용량 공급자(Capacity Providers)를 사용할 �
 2. [ASG(Auto Scaling Group) 구성](http://ecs.catsdogs.kr.s3-website.ap-northeast-2.amazonaws.com/ko/autoscale/cluster/asg/)
 3. [클러스터 부하 테스트](http://ecs.catsdogs.kr.s3-website.ap-northeast-2.amazonaws.com/ko/autoscale/cluster/loadtest/)
 4. [결과 확인](http://ecs.catsdogs.kr.s3-website.ap-northeast-2.amazonaws.com/ko/autoscale/cluster/monitoring/)
+
+ > 클러스터 오토스케일링에 대해 더 알아보고 싶다면 다음 [블로그](https://aws.amazon.com/blogs/containers/deep-dive-on-amazon-ecs-cluster-auto-scaling/)를 참고합니다. 

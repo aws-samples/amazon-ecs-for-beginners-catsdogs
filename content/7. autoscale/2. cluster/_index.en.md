@@ -17,3 +17,5 @@ Capacity Providers work with both EC2 and Fargate. With EC2, you can create a Ca
 2. [Configure Auto Scaling Group (ASG)](http://ecs.catsdogs.kr.s3-website.ap-northeast-2.amazonaws.com/en/autoscale/cluster/asg/)
 3. [Cluster Load Test](http://ecs.catsdogs.kr.s3-website.ap-northeast-2.amazonaws.com/en/autoscale/cluster/loadtest/)
 4. [Monitoring](http://ecs.catsdogs.kr.s3-website.ap-northeast-2.amazonaws.com/en/autoscale/cluster/monitoring/)
+
+ > You may refer to [Deep Dive on Amazon ECS Cluster Auto Scaling](https://aws.amazon.com/blogs/containers/deep-dive-on-amazon-ecs-cluster-auto-scaling/) for further understanding.

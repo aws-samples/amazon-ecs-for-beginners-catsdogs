@@ -35,8 +35,8 @@ home = [ "HTML", "RSS", "JSON"]
   weight = 1020
 
 [[menu.shortcuts]]
-  name = "<i class='fas fa-blog'></i> AWS Blog"
-  url = "https://aws.amazon.com/blogs/aws/"
+  name = "<i class='fas fa-blog'></i> AWS Container Blog"
+  url = "https://aws.amazon.com/blogs/?awsf.blog-master-category=category%23containers"
   weight = 1030
 
 

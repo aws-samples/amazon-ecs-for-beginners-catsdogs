@@ -46,7 +46,7 @@ http://ecs.catsdogs.kr.s3-website.ap-northeast-2.amazonaws.com/ko/
 ## Contributing
 If you are interested in contributing to our project, whether it's a bug report, new feature, correction, or additional documentation, we greatly value feedback and contributions from our community.
 
-Please read through [the guideline](/blob/master/CONTRIBUTING.md) before submitting any issues or pull requests to ensure we have all the necessary information to effectively respond to your bug report or contribution.
+Please read through [the guideline](/CONTRIBUTING.md) before submitting any issues or pull requests to ensure we have all the necessary information to effectively respond to your bug report or contribution.
 
 ## License
 This library is licensed under the MIT-0 License. See the LICENSE file.

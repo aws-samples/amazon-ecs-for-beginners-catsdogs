@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v1
         with:
           submodules: recursive
-          
+
           
       - name: Hugo setup
         uses: peaceiris/actions-hugo@v2.4.11

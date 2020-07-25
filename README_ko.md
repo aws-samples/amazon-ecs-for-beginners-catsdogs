@@ -44,5 +44,8 @@ http://ecs.catsdogs.kr.s3-website.ap-northeast-2.amazonaws.com/en/
 [Korean]
 http://ecs.catsdogs.kr.s3-website.ap-northeast-2.amazonaws.com/ko/
 
+## 컨텐츠 기여
+버그 보고, 새로운 기능, 오탈자 정정이나 문서 추가 등 프로젝트에 기여하고 싶다면 [가이드 라인](/blob/master/CONTRIBUTING.md)을 참고하여 이슈 또는 pull request를 제출해 주세요. 저희가 효과적으로 대응할 수 있도록 관련한 정보를 정확히 포함해주시면 감사하겠습니다. 저희는 커뮤니티의 피드백과 기여를 소중하게 생각합니다.
+
 ## 라이센스
 이 라이브러리는 LICENSE 파일에 명시되어 있는 바와 같이 MIT-0 라이센스를 따릅니다. 

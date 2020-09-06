@@ -11,7 +11,7 @@ weight: 58
 
 2. 만약 상태가 **In alarm**으로 바뀌지 않는다면, **Workstation**에서 **cluster_loadtest.sh** 스크립트를 연속으로 몇 번 더 실행합니다. 
 ~~~
-$ ./cluster_loadtest_[실습자 이름].sh 
+./cluster_loadtest_[실습자 이름].sh 
 ~~~
 ![InAlarm](/images/autoscale/cluster/cluster_in_alarm_cw.png)
 

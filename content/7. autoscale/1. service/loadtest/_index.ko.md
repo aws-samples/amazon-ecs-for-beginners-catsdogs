@@ -9,7 +9,7 @@ weight: 50
 
 1. **Workstation** 인스턴스에 접속합니다.
 ~~~
-$ ssh -i [key pair name.pem] ec2-user@[Workstation Public IP]
+ssh -i [key pair name.pem] ec2-user@[Workstation Public IP]
 ~~~
 
 2. **Workstation** 인스턴스에서 예시로 넣어둔 **service_loadtest.sh**의 내용을 리눅스 *cat* 명령어를 이용해 살펴봅니다.
@@ -20,7 +20,7 @@ $ ssh -i [key pair name.pem] ec2-user@[Workstation Public IP]
 ![CopyALBDNS](/images/autoscale/copy_alb_dns.png)
 
 ~~~
-$ vi service_loadtest_[실습자이름].sh
+vi service_loadtest_[실습자이름].sh
 ~~~
 
 ~~~
@@ -33,10 +33,10 @@ ab -c 200 -n 200 -t 30 [실습자의 ALB DNS name] + /
 1. **service_loadtest_실습자이름.sh** 스크립트를 실행하기 위해 권한을 부여한 후 부하 테스트를 수행합니다. 연속으로 3분 이상 실행합니다. 다음 단계에서 모니터링합니다. 
 
 ~~~
-$ chmod 755 service_loadtest_[실습자 이름].sh
+chmod 755 service_loadtest_[실습자 이름].sh
 ~~~
 
 ~~~
-$ ./service_loadtest_[실습자이름].sh
+./service_loadtest_[실습자이름].sh
 ~~~
 ![PerformLoadTest](/images/autoscale/perform_service_load_test.png)

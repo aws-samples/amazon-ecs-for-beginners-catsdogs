@@ -9,11 +9,11 @@ You will tag the images you built earlier and push to **cats**, **dogs** ECR rep
 
 1. In order to tag and push images, *Workstation* has to login to ECR by docker login. 
 ~~~
-$ sudo aws ecr get-login --no-include-email --region ap-northeast-2
+sudo aws ecr get-login --no-include-email --region ap-northeast-2
 ~~~
 ![ECRlogin](/images/ecr/ecr_login_1.png)
 ~~~
-$ sudo su
+sudo su
 $(aws ecr get-login --no-include-email --region ap-northeast-2)
 ~~~
 ![ECRloginSucceeded](/images/ecr/ecr_login_2.png)
@@ -30,19 +30,19 @@ You must replace with your own cats, dog Repository URI.
 
 ![ECRTagPush](/images/ecr/ecr_view_commands_2.png)
 ~~~
-$ docker tag cats:latest cats Repository URI:latest 
+docker tag cats:latest cats Repository URI:latest 
 ~~~
 ~~~
-$ docker push cats Repository URI:latest 
+docker push cats Repository URI:latest 
 ~~~
 ![CatsPush](/images/ecr/ecr_push_1.png)
 
 4. Tag and push **dogs** too. 
 ~~~
-$ docker tag dogs:latest dogs Repository URI:latest 
+docker tag dogs:latest dogs Repository URI:latest 
 ~~~
 ~~~
-$ docker push dogs Repository URI:latest
+docker push dogs Repository URI:latest
 ~~~
 ![DogsPush](/images/ecr/ecr_push_dogs.png)
 

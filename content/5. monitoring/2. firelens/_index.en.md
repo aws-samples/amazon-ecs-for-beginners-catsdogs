@@ -1,5 +1,5 @@
 ---
-title: "FireLens"
+title: "Log routing using AWS FireLens"
 weight: 42
 ---
 

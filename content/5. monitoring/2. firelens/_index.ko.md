@@ -1,5 +1,5 @@
 ---
-title: "파이어렌즈"
+title: "AWS FireLens를 이용한 로그 라우팅"
 weight: 42
 ---
 

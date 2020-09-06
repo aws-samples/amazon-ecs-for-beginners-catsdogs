@@ -9,11 +9,11 @@ weight: 23
 
 1. 이미지를 태그하고 푸시하기 위해 *Workstation*에서 ECR로 로그인합니다. 
 ~~~
-$ sudo aws ecr get-login --no-include-email --region ap-northeast-2
+sudo aws ecr get-login --no-include-email --region ap-northeast-2
 ~~~
 ![ECRlogin](/images/ecr/ecr_login_1.png)
 ~~~
-$ sudo su
+sudo su
 $(aws ecr get-login --no-include-email --region ap-northeast-2)
 ~~~
 ![ECRloginSucceeded](/images/ecr/ecr_login_2.png)
@@ -30,19 +30,19 @@ cats Repository URI, dog Repository URI는 실습자 본인의 URI여야 합니�
 {{% /notice %}}
 
 ~~~
-$ docker tag cats:latest cats Repository URI:latest 
+docker tag cats:latest cats Repository URI:latest 
 ~~~
 ~~~
-$ docker push cats Repository URI:latest 
+docker push cats Repository URI:latest 
 ~~~
 ![CatsPush](/images/ecr/ecr_push_1.png)
 
 1. **Dogs**도 동일한 작업을 수행합니다.
 ~~~
-$ docker tag dogs:latest dogs Repository URI:latest 
+docker tag dogs:latest dogs Repository URI:latest 
 ~~~
 ~~~
-$ docker push dogs Repository URI:latest
+docker push dogs Repository URI:latest
 ~~~
 ![DogsPush](/images/ecr/ecr_push_dogs.png)
 

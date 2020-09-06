@@ -9,7 +9,7 @@ Move to [CloudWatch Alarms.](https://ap-northeast-2.console.aws.amazon.com/cloud
 ![InsufficientData](/images/autoscale/cluster/cluster_alarm_insufficient_data.png)
 2. If the state does not change into **In alarm**, continue to run **cluster_loadtest.sh** script.
 ~~~
-$ ./cluster_loadtest.sh 
+./cluster_loadtest.sh 
 ~~~
 ![InAlarm](/images/autoscale/cluster/cluster_in_alarm_cw.png)
 

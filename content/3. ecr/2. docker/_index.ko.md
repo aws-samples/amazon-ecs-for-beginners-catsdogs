@@ -10,14 +10,14 @@ weight: 22
 
 1. [Amazon EC2](https://console.aws.amazon.com/ec2)로 이동하여 Instances 목록에서 *Workstation*를 선택하고 **IPv4 Public IP**를 복사합니다. 터미널을 열고 SSH 접속합니다.  
 ~~~
-$ ssh -i [key pair name.pem] ec2-user@[Workstation Public IP]
+ssh -i [key pair name.pem] ec2-user@[Workstation Public IP]
 ~~~
 
 2. cats와 dogs의 Dockerfile 내용을 확인합니다. 도커는 Dockerfile을 읽어 자동으로 이미지를 빌드합니다. Dockerfile은 이미지 조립하기 위해 호출해야 하는 커맨드들을 담고 있습니다. 
 ~~~
-$ cd catsdogs 
-$ cd cats 
-$ cat Dockerfile
+cd catsdogs 
+cd cats 
+cat Dockerfile
 ~~~ 
 cats 디렉토리의 Dockerfile은 **cats** 도커 이미지를 빌드하기 위해 필요합니다. 어떤 내용을 담고 있는지 리눅스 *cat* 명령어를 이용하여 확인합니다.
 ![CatImage](/images/ecr/build_cats_1.png)
@@ -28,19 +28,19 @@ cats 디렉토리의 Dockerfile은 **cats** 도커 이미지를 빌드하기 위
 
 1. **cats**를 빌드합니다. 
 ~~~
-$ docker build -t cats . 
+docker build -t cats . 
 ~~~
 ![CatImageBuild](/images/ecr/build_cats_2.png)
 
 4. **dogs**에서도 동일한 작업을 수행하기 위해 디렉토리를 이동합니다.
 ~~~
-$ cd ..
-$ cd dogs
-$ cat Dockerfile 
+cd ..
+cd dogs
+cat Dockerfile 
 ~~~
 마찬가지로 이 Dockerfile은 dogs 도커 이미지를 빌드하기 위해 필요합니다.
 
 5. **dogs**를 빌드합니다.
 ~~~
-$ docker build -t dogs .
+docker build -t dogs .
 ~~~

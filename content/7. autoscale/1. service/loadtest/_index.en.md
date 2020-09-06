@@ -9,7 +9,7 @@ SSH to your **Workstation** instance and create a shell script to perform load t
 
 1. SSH to your **Workstation** EC2 instance. 
 ~~~
-$ ssh -i [key pair name.pem] ec2-user@[Workstation Public IP]
+ssh -i [key pair name.pem] ec2-user@[Workstation Public IP]
 ~~~
 
 2. Use linux *cat* command to read **service_loadtest.sh** example. 
@@ -19,7 +19,7 @@ $ ssh -i [key pair name.pem] ec2-user@[Workstation Public IP]
 ![CopyALBDNS](/images/autoscale/copy_alb_dns.png)
 
 ~~~
-$ vi service_loadtest_[Your Name].sh
+vi service_loadtest_[Your Name].sh
 ~~~
 
 ~~~
@@ -32,10 +32,10 @@ ab -c 200 -n 200 -t 30 [Your ALB DNS name] + /
 4.	Change the permission and run **service_loadtest_YourName.sh** script in serial for three minutes. Monitor the status in the next step.
 
 ~~~
-$ chmod 755 service_loadtest_[Your Name].sh
+chmod 755 service_loadtest_[Your Name].sh
 ~~~
 
 ~~~
-$ ./service_loadtest_[Your Name].sh
+./service_loadtest_[Your Name].sh
 ~~~
 ![PerformLoadTest](/images/autoscale/perform_service_load_test.png)

@@ -1,5 +1,5 @@
 ---
-title: "ECR로 이미지 푸시"
+title: "이미지 태그하고 ECR로 푸시하기"
 weight: 23
 ---
 

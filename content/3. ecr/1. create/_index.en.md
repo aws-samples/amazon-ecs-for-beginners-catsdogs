@@ -13,4 +13,9 @@ You will create two ECR repositories for cats and dogs docker image management. 
 1. Create repository: name **cats**, **dogs** 
 ![CreateECR](/images/ecr/ecr_4.png)
 1. Check if the two repositories created successfully. 
+   
+{{% notice warning %}}
+The name of the repository must be **cats**, **dogs**, and you can proceed to the next **Tag and Push to ECR** step.
+{{% /notice %}}
+
 ![CheckECR](/images/ecr/ecr_5.png)

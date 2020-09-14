@@ -13,7 +13,7 @@ weight: 22
 ssh -i [key pair name.pem] ec2-user@[Workstation Public IP]
 ~~~
 
-{{% notice tips %}}
+{{% notice tip %}}
 로컬 터미널을 사용하지 않아도 EC2에 웹 브라우저에서 간편하게 접속할 수 있습니다. Workstation을 클릭하고 Connect를 클릭하여 세 가지 **Connection method** 중 EC2 Instance Connect (browser-based SSH connection)를 선택합니다. User name은 root가 아닌 ec2-user를 사용하시는 것이 보안상 좋습니다.
 {{% /notice %}}
 

@@ -17,6 +17,11 @@ Cats 작업 정의는 web과 마찬가지로 **EC2 타입**을 선택합니다. 
 ### FireLens 구성
 #### FireLens 활성화
 *Log Router Integration*까지 스크롤을 내린 후 *Enable Firelens Intigration* 박스에 체크되어 있는지 확인합니다. **fluentbit** 타입을 선택하고 **Apply**를 클릭합니다. 
+
+{{% notice note %}}
+AWS는 CloudWatch Logs 및 Kinesis Data Firehose 용 플러그인이 포함된 Fluent Bit 이미지를 제공합니다. Fluentd보다는 Fluent Bit이 리소스 사용률이 낮기 때문에 이를 로그 라우터로 사용하는 것이 좋습니다. 자세한 내용은 [Fluent Bit용 CloudWatch Logs](https://github.com/aws/amazon-cloudwatch-logs-for-fluent-bit) 및 [Fluent Bit용 Amazon Kinesis Firehose](https://github.com/aws/amazon-kinesis-firehose-for-fluent-bit)을 참고합니다. 
+{{% /notice %}}
+
 ![EnableFireLens](/images/ecs/taskdef/enable_firelens.png)
 
 다시 *Container Definitions*로 돌아와서 **log_router**컨테이너가 생성된 것을 확인합니다.  
@@ -76,3 +81,171 @@ Cats 작업 정의는 web과 마찬가지로 **EC2 타입**을 선택합니다. 
 
 3. **Add**를 누르면 창이 닫힙니다. cats 컨테이너가 추가된 것을 확인합니다.
 4. **Create** 클릭하여 **catsdef** 생성을 마칩니다. 
+
+
+
+{{% notice tip %}}
+아래의 JSON 템플릿을 이용해 위의 번거로운 GUI 작업 없이 동일한 **cats** 작업 정의를 구성할 수 있습니다. 콘솔에서 JSON을 붙여넣거나 파일로 저장 후 AWS CLI --cli-input-json 옵션을 사용할 수 있습니다. 
+{{% /notice %}}
+
+* Task Definition 생성 화면에서 스크롤을 내리면 **Configure via JSON** 버튼이 있습니다.
+![](/images/ecs/taskdef/json.png)
+
+```
+{
+  "ipcMode": null,
+  "executionRoleArn": null,
+  "containerDefinitions": [
+    {
+      "dnsSearchDomains": null,
+      "environmentFiles": null,
+      "logConfiguration": null,
+      "entryPoint": null,
+      "portMappings": [],
+      "command": null,
+      "linuxParameters": null,
+      "cpu": 0,
+      "environment": [],
+      "resourceRequirements": null,
+      "ulimits": null,
+      "dnsServers": null,
+      "mountPoints": [],
+      "workingDirectory": null,
+      "secrets": null,
+      "dockerSecurityOptions": null,
+      "memory": null,
+      "memoryReservation": 50,
+      "volumesFrom": [],
+      "stopTimeout": null,
+      "image": "906394416424.dkr.ecr.ap-northeast-2.amazonaws.com/aws-for-fluent-bit:latest",
+      "startTimeout": null,
+      "firelensConfiguration": {
+        "type": "fluentbit",
+        "options": null
+      },
+      "dependsOn": null,
+      "disableNetworking": null,
+      "interactive": null,
+      "healthCheck": null,
+      "essential": true,
+      "links": null,
+      "hostname": null,
+      "extraHosts": null,
+      "pseudoTerminal": null,
+      "user": "0",
+      "readonlyRootFilesystem": null,
+      "dockerLabels": null,
+      "systemControls": null,
+      "privileged": null,
+      "name": "log_router"
+    },
+    {
+      "dnsSearchDomains": null,
+      "environmentFiles": null,
+      "logConfiguration": {
+        "logDriver": "awsfirelens",
+        "secretOptions": null,
+        "options": {
+          "log_group_name": "ecs-demogo-log",
+          "auto_create_group": "true",
+          "log_stream_prefix": "from-fluent-bit",
+          "region": "ap-northeast-2",
+          "Name": "cloudwatch"
+        }
+      },
+      "entryPoint": null,
+      "portMappings": [
+        {
+          "hostPort": 0,
+          "protocol": "tcp",
+          "containerPort": 80
+        }
+      ],
+      "command": null,
+      "linuxParameters": null,
+      "cpu": 0,
+      "environment": [],
+      "resourceRequirements": null,
+      "ulimits": null,
+      "dnsServers": null,
+      "mountPoints": [],
+      "workingDirectory": null,
+      "secrets": null,
+      "dockerSecurityOptions": null,
+      "memory": 128,
+      "memoryReservation": null,
+      "volumesFrom": [],
+      "stopTimeout": null,
+      "image": "038445823716.dkr.ecr.ap-northeast-2.amazonaws.com/cats:latest",
+      "startTimeout": null,
+      "firelensConfiguration": null,
+      "dependsOn": null,
+      "disableNetworking": null,
+      "interactive": null,
+      "healthCheck": null,
+      "essential": true,
+      "links": null,
+      "hostname": null,
+      "extraHosts": null,
+      "pseudoTerminal": null,
+      "user": null,
+      "readonlyRootFilesystem": null,
+      "dockerLabels": null,
+      "systemControls": null,
+      "privileged": null,
+      "name": "cats"
+    }
+  ],
+  "placementConstraints": [],
+  "memory": null,
+  "taskRoleArn": null,
+  "compatibilities": [
+    "EC2"
+  ],
+  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:038445823716:task-definition/catsdef:16",
+  "family": "catsdef",
+  "requiresAttributes": [
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.ecr-auth"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "ecs.capability.firelens.fluentbit"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.logging-driver.awsfirelens"
+    }
+  ],
+  "pidMode": null,
+  "requiresCompatibilities": [
+    "EC2"
+  ],
+  "networkMode": null,
+  "cpu": null,
+  "revision": 16,
+  "status": "ACTIVE",
+  "inferenceAccelerators": null,
+  "proxyConfiguration": null,
+  "volumes": []
+}
+```

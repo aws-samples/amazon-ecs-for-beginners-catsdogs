@@ -13,7 +13,14 @@ weight: 22
 ssh -i [key pair name.pem] ec2-user@[Workstation Public IP]
 ~~~
 
-2. cats와 dogs의 Dockerfile 내용을 확인합니다. 도커는 Dockerfile을 읽어 자동으로 이미지를 빌드합니다. Dockerfile은 이미지 조립하기 위해 호출해야 하는 커맨드들을 담고 있습니다. 
+{{% notice tips %}}
+로컬 터미널을 사용하지 않아도 EC2에 웹 브라우저에서 간편하게 접속할 수 있습니다. Workstation을 클릭하고 Connect를 클릭하여 세 가지 **Connection method** 중 EC2 Instance Connect (browser-based SSH connection)를 선택합니다. User name은 root가 아닌 ec2-user를 사용하시는 것이 보안상 좋습니다.
+{{% /notice %}}
+
+![](/images/ecr/webssh.png)
+![](/images/ecr/webssh2.png)
+
+1. cats와 dogs의 Dockerfile 내용을 확인합니다. 도커는 Dockerfile을 읽어 자동으로 이미지를 빌드합니다. Dockerfile은 이미지 조립하기 위해 호출해야 하는 커맨드들을 담고 있습니다. 
 ~~~
 cd catsdogs 
 cd cats 

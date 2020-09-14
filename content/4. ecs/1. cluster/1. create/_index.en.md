@@ -16,7 +16,7 @@ You will create EC2 Linux cluster **DEMOGO-ECS** and an IAM role **ecsInstanceRo
 - Cluster name: `DEMOGO-ECS`
 - Instance Configuration    
     + Provisioning model: On-Demand Instance
-    + EC2 Instance type: m5.large
+    + EC2 Instance type: m5d.large
     + Number of instances: `2` 
     + EC2 AMI id: Amazon Linux 2 AMI
     + EBS storage: 22

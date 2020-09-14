@@ -13,7 +13,13 @@ You will access to *Workstation* EC2 instance and build **cats** and **dogs** do
 ssh -i [key pair name.pem] ec2-user@[Workstation Public IP]
 ~~~
 
-2. Build **cats**, **dogs** docker images with **Dockerfile**. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
+{{% notice note %}}
+To ssh your **Workstation,** you can simply use **browser-based SSH connection.**   
+{{% /notice %}}
+
+![](/images/ecr/webssh.png)
+![](/images/ecr/webssh2.png)
+1. Build **cats**, **dogs** docker images with **Dockerfile**. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
 ~~~
 cd catsdogs 
 cd cats 

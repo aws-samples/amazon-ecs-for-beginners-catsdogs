@@ -16,7 +16,7 @@ weight: 31
 - Cluster name: `DEMOGO-ECS`
 - Instance Configuration    
     + Provisioning model: On-Demand Instance
-    + EC2 Instance type: m5.large
+    + EC2 Instance type: m5d.large
     + Number of instances: `2` 
     + EC2 AMI id: Amazon Linux 2 AMI
     + EBS storage: 22
@@ -25,9 +25,9 @@ weight: 31
 4. Networking
 + VPC: **DemoGoECSVPC (10.0.0.0/16)**
 + Subnets: **Private subnet 1,2 (10.0.3.0/24, 10.0.4.0/24)**
-+ Security Group: **DEMOGO-ECS-Instance**
++ Security Group: **ecs-demogo-ECSInstanceSG**
 
-5. Container instance IAM role: **Create new role**를 선택합니다. **ecsInstanceRole**라는 이름으로 자동 생성합니다. 
+1. Container instance IAM role: **Create new role**를 선택합니다. **ecsInstanceRole**라는 이름으로 자동 생성합니다. 
 ![IAMrole](/images/ecs/cluster/cluster_iam_role.png)
 
 {{% notice info %}}

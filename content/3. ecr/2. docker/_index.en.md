@@ -19,6 +19,7 @@ To ssh your **Workstation,** you can simply use **browser-based SSH connection.*
 
 ![](/images/ecr/webssh.png)
 ![](/images/ecr/webssh2.png)
+
 1. Build **cats**, **dogs** docker images with **Dockerfile**. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
 ~~~
 cd catsdogs 

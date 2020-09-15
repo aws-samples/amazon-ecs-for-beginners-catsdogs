@@ -12,7 +12,7 @@ You will create EC2 Linux cluster **DEMOGO-ECS** and an IAM role **ecsInstanceRo
 2)	Step 1: Select cluster template – Select **EC2 Linux + Networking**.
 ![SelectClusterTemplate](/images/ecs/cluster/select_linux.png)
 3)	Step 2: Configure cluster	
-![ConfigureCluster](/images/ecs/cluster/create_demogo_ecs.png)
+![ConfigureCluster](/images/ecs/cluster/cluster_v2.png)
 - Cluster name: `DEMOGO-ECS`
 - Instance Configuration    
     + Provisioning model: On-Demand Instance

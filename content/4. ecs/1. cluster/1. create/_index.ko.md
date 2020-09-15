@@ -12,7 +12,7 @@ weight: 31
 2)	Step 1: Select cluster template – **EC2 Linux + Networking**을 선택합니다. 
 ![SelectClusterTemplate](/images/ecs/cluster/select_linux.png)
 3)	Step 2: Configure cluster	
-![ConfigureCluster](/images/ecs/cluster/create_demogo_ecs.png)
+![ConfigureCluster](/images/ecs/cluster/cluster_v2.png)
 - Cluster name: `DEMOGO-ECS`
 - Instance Configuration    
     + Provisioning model: On-Demand Instance
@@ -22,7 +22,7 @@ weight: 31
     + EBS storage: 22
     + Key pair: 키 파일을 선택합니다.  
 ![ConfigureNetwork](/images/ecs/cluster/cluster_network.png)
-4. Networking
+1. Networking
 + VPC: **DemoGoECSVPC (10.0.0.0/16)**
 + Subnets: **Private subnet 1,2 (10.0.3.0/24, 10.0.4.0/24)**
 + Security Group: **ecs-demogo-ECSInstanceSG**

@@ -38,7 +38,7 @@ Amazon Elastic Container Service (Amazon ECS) is a **fully managed container orc
 
 ## Start here:
 [English]
-https://ecs-cats-dogs.workshop.aws/en/
+https://ecs-cats-dogs.workshop.aws/en
 
 [Korean]
 https://ecs-cats-dogs.workshop.aws/ko

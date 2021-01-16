@@ -1,3 +1,10 @@
 public
 .DS_Store
 static/images/.DS_Store
+content
+.github
+.gitmodules
+.gitignore
+static
+.github/workflows
+config.toml
